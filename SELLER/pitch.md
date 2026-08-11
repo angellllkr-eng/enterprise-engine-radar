@@ -1,35 +1,22 @@
-<div align="center">
-
 # Pitch
 
-**MindReply · Enterprise Engine Radar**
-
-</div>
-
----
-
 **One line**  
-Independent, living scorecard and evaluation kit for the only LLMOps platforms still serious in 2026 — so the team stops guessing and ships under real governance.
+Scorecard and evaluation kit for the LLMOps platforms that still matter in 2026 — so the team stops guessing.
 
 **Problem**  
-Many public lists still surface sunsetting or pivoted products. Platform and procurement teams burn cycles on dead ends. Production risk stays hidden until it is expensive.
+Public lists still recommend dead or pivoted products. Teams waste time on them. Risk shows up late.
 
-**What we deliver**  
-1. Continuously updated Top-10 ranked on enterprise criteria, not marketing.  
-2. Ready-to-run evaluation kit (self-host smoke, registry tests, eval gates, compliance checklist).  
-3. Optional private scorecard and gap analysis against the buyer’s shortlist and risk profile.
+**What you get**  
+1. Top-10 ranked on enterprise criteria, not marketing.  
+2. Evaluation kit you can run (self-host, registry, evals, compliance).  
+3. Optional private scorecard against the buyer’s shortlist.
 
-**Why MindReply**  
-We treat the ranking as a production system: evidence-based, acquisition-aware, and current.  
-We do not sell the platforms. We sell the intelligence that keeps the wrong one off the shortlist.
+**Why us**  
+We don’t sell the platforms. We keep the ranking current and the gaps visible.
 
 **Next step**  
-Share the live radar. Book a 30-minute working session to map the EVAL-KIT against the top two or three candidates.
+Share the ranking. Book 30 minutes to run the kit on the top two or three candidates.
 
 ---
 
-<div align="center">
-
-[mind-reply.com](https://mind-reply.com) · *Polite & persuasive*
-
-</div>
+[mind-reply.com](https://mind-reply.com)

@@ -1,37 +1,23 @@
-<div align="center">
-
-# Discovery Questions
-
-**MindReply · Enterprise Engine Radar**
-
-</div>
-
----
-
-Use these to qualify and sharpen the recommendation. Do not skip the risk section.
+# Discovery questions
 
 ### Context
-1. Already committed to LangChain / LangGraph, or is the stack open?  
-2. Hard requirement for self-host, VPC, or air-gapped?  
-3. Who edits prompts today — engineers only, or product and domain experts as well?  
-4. Is evaluation currently ad-hoc or already part of CI?
+1. Already on LangChain / LangGraph, or open stack?  
+2. Self-host, VPC, or air-gapped required?  
+3. Who edits prompts — engineers only, or product / domain experts too?  
+4. Is evaluation in CI yet, or still ad-hoc?
 
-### Risk & compliance
-5. Which regimes must the platform satisfy (SOC 2, ISO, HIPAA, GDPR residency)?  
-6. Highest-severity failure mode you are trying to prevent (silent regression, cost blow-up, data leakage, audit failure)?
+### Risk
+5. Which compliance regimes matter (SOC 2, ISO, HIPAA, residency)?  
+6. Worst failure mode you’re trying to avoid (silent regression, cost spike, data leak, audit miss)?
 
-### Decision process
-7. Who signs the final platform choice?  
-8. Timeline and budget posture for the evaluation itself?  
+### Decision
+7. Who signs the final choice?  
+8. Timeline and budget for the evaluation itself?  
 9. Any of these platforms already in pilot?
 
 ### Close
-10. Would a private scorecard against the shortlist plus a joint evaluation session be useful this month?
+10. Want a private scorecard on the shortlist plus a joint run of the kit this month?
 
 ---
 
-<div align="center">
-
 [mind-reply.com](https://mind-reply.com)
-
-</div>

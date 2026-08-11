@@ -1,95 +1,82 @@
-<div align="center">
-
-# Private Client Scorecard
-
-**MindReply · Enterprise Engine Radar**
-
-</div>
-
----
+# Client scorecard
 
 **Client:** [Name]  
 **Date:** [YYYY-MM-DD]  
-**Prepared by:** MindReply / Angel K  
-**Shortlist under review:** [Platform A] · [Platform B] · [Platform C]
+**Prepared by:** MindReply  
+**Shortlist:** [A] · [B] · [C]
 
 ---
 
-### Context captured
+### Context
 
 | Item | Answer |
 |------|--------|
-| Stack commitment (LangChain / open / other) | |
-| Self-host / VPC / air-gapped required? | |
-| Who edits prompts today | |
-| Evaluation already in CI? | |
+| Stack (LangChain / open / other) | |
+| Self-host / VPC / air-gapped? | |
+| Who edits prompts | |
+| Evaluation in CI? | |
 | Compliance regimes | |
-| Highest-severity failure mode to prevent | |
+| Worst failure mode to avoid | |
 | Decision owner | |
 | Timeline | |
 
 ---
 
-### Score against client constraints
+### Scores
 
-| Criterion | Weight | Platform A | Platform B | Platform C | Notes |
-|-----------|--------|------------|------------|------------|-------|
-| Enterprise readiness (SSO, RBAC, audit, residency) | 30% | /10 | /10 | /10 | |
-| Registry & release management | 20% | /10 | /10 | /10 | |
-| Evaluation depth + CI gates | 15% | /10 | /10 | /10 | |
-| Observability & cost attribution | 15% | /10 | /10 | /10 | |
+| Criterion | Weight | A | B | C | Notes |
+|-----------|--------|---|---|---|-------|
+| Enterprise readiness | 30% | /10 | /10 | /10 | |
+| Registry & release | 20% | /10 | /10 | /10 | |
+| Evaluation + CI gates | 15% | /10 | /10 | /10 | |
+| Observability & cost | 15% | /10 | /10 | /10 | |
 | Non-technical collaboration | 10% | /10 | /10 | /10 | |
-| Multi-model / multi-agent fit | 5% | /10 | /10 | /10 | |
-| Momentum & independence risk | 5% | /10 | /10 | /10 | |
+| Multi-model / multi-agent | 5% | /10 | /10 | /10 | |
+| Momentum & independence | 5% | /10 | /10 | /10 | |
 | **Weighted total** | 100% | | | | |
 
 ---
 
-### EVAL-KIT results summary
+### EVAL-KIT results
 
-| Protocol | Platform A | Platform B | Platform C |
-|----------|------------|------------|------------|
+| Protocol | A | B | C |
+|----------|---|---|---|
 | 01 Enterprise checklist | | | |
 | 02 Self-host smoke (time / steps) | | | |
-| 03 Prompt registry tests | | | |
+| 03 Prompt registry | | | |
 | 04 Eval + observability | | | |
 
 ---
 
-### Gaps & risks
+### Gaps
 
-**Platform A**  
+**A**  
 -  
 
-**Platform B**  
+**B**  
 -  
 
-**Platform C**  
+**C**  
 -  
 
 ---
 
 ### Recommendation
 
-**Primary recommendation:**  
+**Primary:**  
 
-**Complementary layer(s):**  
+**Complementary:**  
 
-**Next concrete step for the client:**  
-
----
-
-### Evidence links
-
--  
--  
--  
+**Next step:**  
 
 ---
 
-<div align="center">
+### Evidence
 
-*Confidential to the named client and MindReply. Not for redistribution.*  
-[mind-reply.com](https://mind-reply.com) · *Polite & persuasive*
+-  
+-  
+-  
 
-</div>
+*Confidential to the named client and MindReply.*
+
+[mind-reply.com](https://mind-reply.com)
