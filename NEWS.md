@@ -11,10 +11,16 @@ Last updated: 2026-08-12
 - **AI Group Call** — Live voice calls with AI participants for specific goals.
 - **Framer AI Agents**, **Hey Noah**, **Prime Agent**, **SecondBrain Note**, **Portfolio Lab** — various agent and note-taking launches in the same window.
 
+## Hidden gems (less obvious, high signal)
+
+- **ngrok AI Gateway** is the quietest but most relevant launch this week for anyone building multi-provider routing. Worth watching how they handle spend limits and semantic cache vs Portkey.
+- **Coldtea** points at the same “agentic dev environment” direction that A11-K and the Ops Agent layer already occupy. Good competitive radar, not a direct threat yet.
+- Several “AI Group Call / voice agent” launches confirm voice is becoming a default interface — useful context for the multiverse / voice hub work.
+
 ## How to keep this file alive
 1. Firecrawl monitor (Product Hunt AI Products) already sends email alerts.
-2. Copy the “new [meaningful]” items into this file (or run the script below).
-3. Optionally post a short GitHub issue or Discussion so the signal is searchable later.
+2. Copy the “new [meaningful]” items into this file.
+3. Optionally post a short GitHub issue so the signal is searchable later.
 
 ## Why this matters for us
 - ngrok AI Gateway is a direct competitor / inspiration for the multi-provider router we just cleaned up.

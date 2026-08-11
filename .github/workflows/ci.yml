@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required files
+        run: |
+          test -f README.md
+          test -f SCORECARD.md
+          test -f NEWS.md
+          test -d EVAL-KIT
+          test -d packages/llm-gateway
+          echo "Core files present"
+      - name: Validate model-tiering JSON
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('packages/llm-gateway/model-tiering.json','utf8')); console.log('model-tiering.json OK')"
