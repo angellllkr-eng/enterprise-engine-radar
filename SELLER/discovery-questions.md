@@ -1,21 +1,21 @@
-# Discovery Questions — Buyer Qualification
+# Discovery Questions
 
-Use these to qualify and sharpen the recommendation.
+Use these to qualify and sharpen the recommendation. Do not skip the risk section.
 
 ## Context
-1. Are you already committed to LangChain / LangGraph, or is the stack open?
-2. Do you have a hard requirement for self-host / VPC / air-gapped?
-3. Who actually edits prompts today — engineers only, or product + domain experts?
+1. Already committed to LangChain / LangGraph, or is the stack open?
+2. Hard requirement for self-host, VPC, or air-gapped?
+3. Who edits prompts today — engineers only, or product and domain experts as well?
 4. Is evaluation currently ad-hoc or already part of CI?
 
-## Risk & Compliance
-5. Which compliance regimes must the platform satisfy (SOC 2, ISO, HIPAA, GDPR residency)?
-6. What is the highest-severity failure mode you are trying to prevent (regression, cost blow-up, data leakage, audit failure)?
+## Risk & compliance
+5. Which regimes must the platform satisfy (SOC 2, ISO, HIPAA, GDPR residency)?
+6. Highest-severity failure mode you are trying to prevent (silent regression, cost blow-up, data leakage, audit failure)?
 
-## Decision Process
-7. Who signs off on the final platform choice?
+## Decision process
+7. Who signs the final platform choice?
 8. Timeline and budget posture for the evaluation itself?
-9. Do you already have any of these platforms in pilot?
+9. Any of these platforms already in pilot?
 
-## Closing
-10. Would a private scorecard against your shortlist + a joint evaluation session be useful this month?
+## Close
+10. Would a private scorecard against the shortlist plus a joint evaluation session be useful this month?

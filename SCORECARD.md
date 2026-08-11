@@ -1,53 +1,50 @@
-# Scoring & Evidence — August 2026
+# Scoring Rationale
 
-Weights are fixed. Scores move only on public evidence (releases, compliance, acquisition risk, production signals).
+**Version:** 11 August 2026  
+**Owner:** MindReply
 
-| Dimension | Weight |
-|-----------|--------|
-| Enterprise readiness (RBAC, SSO/SAML, audit, SOC2/ISO, residency, VPC) | 30% |
-| Registry + versioning + release management | 20% |
-| Evaluation depth (offline/online, regression, CI gates, HITL) | 15% |
-| Production observability + cost attribution | 15% |
-| Non-technical collaboration | 10% |
-| Multi-model / multi-agent support | 5% |
-| Momentum & independence | 5% |
+## Weights
 
----
+| Dimension | Weight | What is measured |
+|-----------|--------|------------------|
+| Enterprise readiness | 30% | RBAC, SSO/SAML/SCIM, audit logs, SOC 2 / ISO / HIPAA evidence, residency, real VPC or air-gapped path |
+| Registry & release | 20% | Version model, protected labels/environments, promotion, diffs, rollback without code redeploy |
+| Evaluation depth | 15% | Offline + online, regression, CI gates, HITL, research-backed or custom scorers |
+| Observability & cost | 15% | Trace fidelity, cost by version/feature/tenant, latency, drift |
+| Non-technical collaboration | 10% | Visual editors, role separation, domain-expert workflows |
+| Multi-model / multi-agent | 5% | Framework reach, agent trajectories, context engineering |
+| Momentum & independence | 5% | Shipping cadence, acquisition risk, public production evidence, OSS health |
 
-## Platform evidence (current)
+Scores move only on public evidence: new compliance statements, self-host improvements, major feature launches, or clear acquisition/pivot risk. Marketing claims alone never raise a score.
 
-### 1. Langfuse — 9.6
-- **v4** (observations-first model) is GA; tables/dashboards up to 165× faster at scale.
-- **v4.6.0** shipped 6 Aug 2026. Recent: Pulse (outlier detection), consistent evaluator sampling, boolean score alerts, Graph View modes, MCP surface (observations, metrics, scores, datasets, annotation queues).
-- Gateway (virtual keys + access controls + direct cost tracking) is on the public roadmap.
-- MIT core remains self-hostable post-ClickHouse acquisition. EE still gates advanced admin (SCIM, full audit policies).
-- Public signal: 32.8k stars, daily-ish releases, official Helm.
+## Platform notes
 
-### 2. LangSmith — 9.2
-- **Fleet**: enterprise agent workspace (identity, sharing, permissions, inbox for HITL).
-- **Engine**: clusters production failures, proposes fixes + evaluators, can open PRs.
-- **SmithDB**: purpose-built store; reported ~15× faster core workloads (P50 trace tree ~92 ms).
-- **LLM Gateway** (public beta): spend caps, rate limits, fallbacks, PII redaction (Enterprise).
-- Self-host remains Enterprise-only. Pricing moved toward LCU/LSU meters; seat pricing still material.
+**Langfuse — 9.6**  
+MIT core remains self-hostable after the January 2026 ClickHouse acquisition. v4 observations-first model materially improved query performance at scale. Protected labels, datasets, LLM-as-judge, and cost dashboards ship in core. Advanced admin (full audit, SCIM) still sits behind the commercial key. Strongest public GitHub signal in the category.
 
-### 3. PromptLayer — 8.7
-- Registry-first product: visual editor, release labels, dynamic traffic-split labels, diffs.
-- Aug 2026: AI-generated trace summaries, OpenRouter provider, request-volume analytics, MCP with 61 tools, prompt/workflow version tracking inside traces.
-- Strongest non-engineer collaboration surface. Self-host only on Enterprise deals.
+**LangSmith — 9.2**  
+SmithDB, Engine, LLM Gateway (beta), and Sandboxes moved the platform from pure tracing into agent lifecycle control. Deepest native fit for LangGraph. Self-host remains Enterprise. Pricing and value drop outside the LangChain ecosystem.
 
-### 4. Braintrust — 8.6
-- **Topics** now GA: continuous classification of production traces (task / issue / sentiment) into SQL-queryable signals.
-- Behavior Specs (trajectory-level behavior contracts), pairwise scoring, experiment summary tables, group-scope online scoring.
-- Enterprise: SSO (SAML/OIDC), audit logging, custom retention, BYOC / self-host options.
+**PromptLayer — 8.7**  
+Still the cleanest registry-first product for mixed technical and non-technical teams. Release labels and traffic-split remain the practical differentiators. Recent Playground work added OpenRouter audio, image, and speech models. Closed source; self-host only on larger contracts.
 
-### 5. Arize Phoenix + AX — 9.0
-- Phoenix **v19.21** (10 Aug): performance work, new instrumentors (AG2, Together, Cohere, Ollama).
-- PXI agent skills (debug-trace, playground orchestration, evaluator authoring).
-- AX carries the enterprise governance and continuous monitoring layer.
+**Braintrust — 8.6**  
+Production traces become datasets with minimal friction. Topics clustering and the gateway beta strengthen the loop. UI remains engineer-centric. Enterprise self-host only.
 
-### 6–10
-Portkey (gateway strength), Agenta (open MIT workbench), Confident AI (org-wide gates), MLflow (Databricks-native), Future AGI (self-host lifecycle claims, thinner independent production proof).
+**Arize Phoenix + AX — 9.0**  
+Phoenix stays the open observability surface (OpenInference). AX added Signal (GA) and managed agents for continuous issue detection and proposed fixes. Best when classical ML monitoring already exists. Full governance lives in AX.
 
----
+**Portkey — 8.3**  
+Gateway strengths (routing, fallbacks, semantic cache, spend limits) are the real product. Evaluation depth is lighter. Useful as a complementary layer rather than the sole engine.
 
-Scores are deliberately conservative. Marketing claims alone never raise a number.
+**Agenta — 8.1**  
+MIT self-host with explicit non-engineer collaboration and environments. Smaller team and less enterprise brand weight in large procurement cycles.
+
+**Confident AI — 8.4**  
+Evaluation and continuous enforcement are the core. Prompt registry polish is secondary. Fits central platform or risk teams.
+
+**MLflow Prompt Registry — 8.2**  
+Natural choice only when the broader Databricks/MLflow estate is already the system of record.
+
+**Future AGI — 7.8**  
+Claims a full self-host lifecycle including optimizers. Independent large-scale production evidence remains thinner than the leaders above. Higher vendor-risk score until more public references appear.

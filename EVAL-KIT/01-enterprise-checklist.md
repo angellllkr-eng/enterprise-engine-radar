@@ -1,23 +1,26 @@
-# 01 — Enterprise checklist
+# 01 — Enterprise Readiness Checklist
 
-Mark Pass / Fail / Partial. Record the evidence (doc link, screenshot, or dated vendor statement).
+Mark every item Pass / Fail / Partial. Record the exact evidence (docs link, screenshot date, or vendor statement).
 
-## Access
+## Identity & access
 - [ ] SSO / SAML
-- [ ] SCIM
-- [ ] RBAC at workspace / project / prompt level
-- [ ] Clear separation for domain experts vs engineers
-- [ ] Audit log of prompt version changes (who / what / when)
+- [ ] SCIM provisioning
+- [ ] Workspace / project / prompt-level RBAC
+- [ ] Clear separation between engineer and domain-expert roles
+- [ ] Immutable audit log of prompt version changes (who, when, from → to)
 
-## Compliance & data
-- [ ] Current SOC 2 Type II (or equivalent)
-- [ ] ISO 27001 if required
-- [ ] HIPAA BAA if healthcare
-- [ ] Data residency options (US / EU / other)
-- [ ] Prompt + trace data can stay in buyer VPC or air-gapped
+## Compliance & residency
+- [ ] Current SOC 2 Type II (or equivalent) statement available
+- [ ] ISO 27001 if the buyer requires it
+- [ ] HIPAA BAA available when needed
+- [ ] Data residency options that match the buyer’s policy (US / EU / other)
+- [ ] Ability to keep prompts and traces inside the buyer’s VPC or air-gapped environment
 
-## Deployment
-- [ ] Documented self-host path that actually works
-- [ ] Official Helm or Terraform
-- [ ] Clear open-core vs paid feature boundary
-- [ ] Core features do not require phone-home
+## Deployment model
+- [ ] Documented self-host path that an experienced platform engineer can follow without tribal knowledge
+- [ ] Official Helm chart or Terraform modules
+- [ ] Clear split between open-source core and commercial EE features
+- [ ] No mandatory phone-home for core tracing, registry, or evaluation features
+
+## Notes for the buyer conversation
+Capture the date of the evidence and any open gaps. Gaps become the private scorecard content.

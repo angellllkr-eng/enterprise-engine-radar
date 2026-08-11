@@ -1,18 +1,18 @@
 # 03 — Prompt Registry & Release Tests
 
-## Core Capabilities
-- [ ] Create prompt with variables
+## Core
+- [ ] Create a prompt with variables
 - [ ] Version history with readable diffs
-- [ ] Named labels / environments (dev / staging / prod)
-- [ ] Protected / locked production labels
-- [ ] Rollback by re-assigning label (no redeploy of application code)
-- [ ] Traffic split or A/B between versions (if claimed)
+- [ ] Named labels or environments (dev / staging / prod)
+- [ ] Protected or locked production labels
+- [ ] Rollback by re-assigning a label (no application redeploy)
+- [ ] Traffic split or A/B between versions if the platform claims it
 
 ## Collaboration
-- [ ] Non-engineer can edit and propose a version via UI
-- [ ] Approval or review step before production promotion
-- [ ] Clear ownership / last-modified metadata
+- [ ] Non-engineer can edit and propose a version through the UI
+- [ ] Review or approval step before production promotion
+- [ ] Clear ownership and last-modified metadata
 
 ## Integration
 - [ ] SDK or API returns the correct version by label
-- [ ] Changes do not require application restart
+- [ ] Label change takes effect without restarting the application

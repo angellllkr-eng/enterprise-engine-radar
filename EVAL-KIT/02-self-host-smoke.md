@@ -2,22 +2,21 @@
 
 **Goal:** Measure time-to-first-useful-signal in a clean environment.
 
-## Protocol
-1. Fresh VM or local Docker (no prior state).
-2. Follow official self-host docs only (no tribal knowledge).
-3. Instrument a minimal OpenAI or Anthropic call.
-4. Confirm the following appear without custom glue:
-   - Trace with latency + token counts
-   - Prompt version linked to the trace
-   - Basic cost attribution
-   - Ability to label a version as “production”
+## Steps
+1. Start from a fresh VM or local Docker host with no prior state.
+2. Follow only the official self-host documentation for that platform.
+3. Instrument a minimal OpenAI or Anthropic call (or the platform’s recommended first example).
+4. Confirm without custom glue:
+   - A trace appears with latency and token counts
+   - The prompt version is linked to the trace
+   - Basic cost attribution is visible
+   - A version can be labelled production (or equivalent)
 
-## Metrics to Capture
+## Capture
 - Wall-clock time to first successful trace
 - Number of manual steps required
-- Whether prompt registry was usable by a non-engineer without code changes
-- Any forced external calls during core operation
+- Whether a non-engineer can see and understand the prompt version
+- Any forced external network calls during core operation
 
-## Pass Criteria
-- Usable registry + tracing in < 45 minutes for an experienced platform engineer
-- No mandatory data egress for core features
+## Pass bar
+Usable registry + tracing in under 45 minutes for an experienced platform engineer, with no mandatory data egress for core features.

@@ -1,12 +1,14 @@
 # Changelog
 
-## 2026-08-11 — Release refresh
-- Front-loaded latest public releases: Langfuse v4.6, LangSmith Fleet/Engine/SmithDB/LLM Gateway, PromptLayer AI summaries + OpenRouter + MCP, Braintrust Topics GA + Behavior Specs, Arize Phoenix 19.21
-- Rewrote ranking table and score notes for density and evidence
-- Tightened language; removed generic filler
-- Kept EVAL-KIT and SELLER assets intact
+## 2026-08-11 — Full E2E refresh
+- Incorporated latest public releases: Langfuse v4.6.0, LangSmith 0.16 / SmithDB / Engine / Gateway / Sandboxes / Managed Deep Agents, PromptLayer multimodal Playground (10 Aug), Arize Signal GA.
+- Rewrote every file for sharper, less generic voice and zero empty sections.
+- Added RELEASES.md as a dedicated current-signal file.
+- Tightened decision matrix and seller materials for immediate use.
 
 ## 2026-08-11 — Initial public release
-- Top-10 ranking, weighted criteria, EVAL-KIT (4 protocols), seller pitch + discovery questions
-- Langfuse ClickHouse acquisition treated as net positive for scale while MIT core stayed open
-- Explicit exclusion of sunsetting / pivoted products
+- Top-10 ranking with weighted criteria.
+- EVAL-KIT (four protocols).
+- Seller pitch and discovery questions.
+- Langfuse ClickHouse acquisition treated as net positive for scale while MIT core remains.
+- Explicit exclusion of sunsetting and pivoted products.

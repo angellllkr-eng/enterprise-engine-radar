@@ -5,14 +5,14 @@
 - [ ] LLM-as-judge or custom scorers
 - [ ] Human annotation / HITL queue
 - [ ] Regression suite that can gate CI
-- [ ] Online evaluation on live traffic (or clear path to it)
+- [ ] Online evaluation on live traffic (or a clear, documented path to it)
 
-## Observability & Cost
+## Observability & cost
 - [ ] Full traces with nested spans (agent / tool / retrieval)
-- [ ] Cost attribution by prompt version / feature / tenant
+- [ ] Cost attribution by prompt version, feature, or tenant
 - [ ] Latency percentiles and error rates
 - [ ] Ability to filter traces by prompt version
 
-## Production Safety
-- [ ] Ability to compare two versions side-by-side on the same dataset
-- [ ] Clear failure modes when evaluation score drops
+## Production safety
+- [ ] Side-by-side comparison of two versions on the same dataset
+- [ ] Clear failure signal when evaluation scores drop
