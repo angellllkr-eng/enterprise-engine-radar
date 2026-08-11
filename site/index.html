@@ -13,6 +13,7 @@
     --muted: #8b939e;
     --accent: #6ea8fe;
     --good: #3dd68c;
+    --warn: #f5a623;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -116,6 +117,29 @@
   }
   .kit a:hover { border-color: var(--accent); }
   .kit a span { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 4px; }
+  .gem {
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  .gem strong { color: var(--warn); }
+  .status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .status div {
+    padding: 12px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.85rem;
+  }
+  .status strong { display: block; color: var(--good); margin-bottom: 4px; }
   footer {
     margin-top: 48px;
     padding-top: 20px;
@@ -134,6 +158,14 @@
   </header>
 
   <p class="lead">The platforms that still hold up for regulated, large-scale production. Scorecard + evaluation kit. Run it against any shortlist.</p>
+
+  <h2>Live status</h2>
+  <div class="status">
+    <div><strong>Gateway</strong> /api/llm in saas-starter</div>
+    <div><strong>Isolation</strong> Day 1 checklist ready</div>
+    <div><strong>Notion</strong> Client scorecard + Wins wall</div>
+    <div><strong>Watcher</strong> Monday platform signals</div>
+  </div>
 
   <h2>Top 10</h2>
 
@@ -237,6 +269,11 @@
     </div>
   </div>
 
+  <h2>Hidden gems</h2>
+  <div class="gem"><strong>ngrok AI Gateway</strong> — multi-provider routing pattern, relevant to our own gateway</div>
+  <div class="gem"><strong>Coldtea.ai</strong> — agentic coding + testing environment</div>
+  <div class="gem"><strong>Agenta</strong> — quiet MIT prompt workspace still climbing</div>
+
   <h2>Decision matrix</h2>
   <div class="matrix">
     <div class="row"><span>Data stays inside your network</span><span>Langfuse</span></div>
@@ -256,17 +293,17 @@
       <strong>Run the EVAL-KIT</strong>
       <span>Four checklists against any shortlist</span>
     </a>
+    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/SELLER/one-pager.md" target="_blank" rel="noopener">
+      <strong>Send the one-pager</strong>
+      <span>Ready for prospects</span>
+    </a>
+    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/SELLER/outreach-email.md" target="_blank" rel="noopener">
+      <strong>Outreach templates</strong>
+      <span>Email + LinkedIn</span>
+    </a>
     <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/CLIENT/scorecard-template.md" target="_blank" rel="noopener">
-      <strong>Fill a client scorecard</strong>
-      <span>Private deliverable for a real evaluation</span>
-    </a>
-    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/SELLER/pitch.md" target="_blank" rel="noopener">
-      <strong>Use the seller pitch</strong>
-      <span>One-liner + discovery questions</span>
-    </a>
-    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar" target="_blank" rel="noopener">
-      <strong>Open the full repo</strong>
-      <span>All files, watcher, releases</span>
+      <strong>Client scorecard</strong>
+      <span>Private deliverable</span>
     </a>
   </div>
 
