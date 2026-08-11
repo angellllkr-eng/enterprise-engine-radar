@@ -1,12 +1,20 @@
 version: "3.8"
+
 services:
-  radar:
+  llm-gateway:
     build:
       context: ..
-      dockerfile: docker/Dockerfile
-      platforms:
-        - linux/amd64
-        - linux/arm64
+      dockerfile: docker/Dockerfile.multiarch
+    platform: linux/arm64
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - LOCAL_MODEL_BASE_URL=${LOCAL_MODEL_BASE_URL:-http://host.docker.internal:11434/v1}
     ports:
-      - "3000:3000"
+      - "3001:3000"
     restart: unless-stopped
+
+# Build multi-arch (on a machine with buildx):
+# docker buildx create --use --name mindreply-builder
+# docker buildx build --platform linux/arm64,linux/amd64 -t ghcr.io/angellllkr-eng/llm-gateway:latest --push -f docker/Dockerfile.multiarch .

@@ -1,0 +1,24 @@
+# Multi-architecture (ARM64-first) image for MindReply radar / gateway tooling
+# Build with: docker buildx build --platform linux/arm64,linux/amd64 -t mindreply/radar:latest --push .
+
+FROM --platform=$BUILDPLATFORM node:22-slim AS base
+WORKDIR /app
+
+# Prefer ARM64 on Apple Silicon / modern cloud ARM; still builds amd64
+ARG TARGETPLATFORM
+ARG BUILDPLATFORM
+
+COPY packages/llm-gateway/package.json* ./packages/llm-gateway/ 2>/dev/null || true
+COPY packages/llm-gateway/ ./packages/llm-gateway/
+
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+ENV NODE_ENV=production
+# Keys never baked in — pass at runtime
+ENV ANTHROPIC_API_KEY=""
+ENV OPENAI_API_KEY=""
+ENV GOOGLE_API_KEY=""
+
+EXPOSE 3000
+CMD ["node", "-e", "console.log('llm-gateway container ready — mount your route or run gateway.js')"]

@@ -1,20 +1,21 @@
 # Outreach — Email
 
-**Subject options**
-- Quick ranking of enterprise prompt / eval platforms (Aug 2026)
-- Langfuse vs LangSmith vs the rest — private scorecard
-- EVAL-KIT for your shortlist (no sales pitch)
+**Subject:** Shortlist for enterprise prompt / LLMOps platforms (Aug 2026)
 
-**Body**
+Hi {{first_name}},
 
-Hi {{name}},
+I put together a current ranking of the platforms that still hold up for regulated, large-scale production — prompt registry, evaluation, observability, and governance.
 
-I maintain a living ranking of the platforms that still work for real enterprise prompt management, evaluation and governance (Langfuse, LangSmith, PromptLayer, Braintrust, Arize, Portkey, and a few others).
+Humanloop is gone, Helicone is maintenance-mode, and a few others pivoted. The attached one-pager has the Top 10, a simple decision matrix, and a four-part EVAL-KIT you can run against any shortlist.
 
-Happy to send the current one-pager or run the EVAL-KIT against whatever shortlist you already have. No product to sell on our side — just a clean pressure-test and a private scorecard.
-
-If useful, reply with your top 2–3 platforms or the constraints that matter most (self-host, SSO, cost attribution, non-technical editors, etc.).
+If useful, I can walk through the scorecard on a 20-minute call or run the kit against the two platforms you’re already considering.
 
 Best,  
-Angel  
-mind-reply.com
+{{your_name}}  
+MindReply · mind-reply.com
+
+---
+
+# Outreach — LinkedIn
+
+{{first_name}} — shared a living Top-10 + eval kit for enterprise prompt / LLMOps platforms (Aug 2026). Ranked for real production: RBAC, registry, CI gates, cost attribution. Happy to send the one-pager if useful.

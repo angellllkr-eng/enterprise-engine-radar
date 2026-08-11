@@ -1,28 +1,27 @@
 # Enterprise Engine Radar — One-Pager
 **MindReply · August 2026**
 
-## What this is
-A living Top-10 ranking + evaluation kit for enterprise prompt management, evaluation, observability and governance platforms.
+## What it is
+A living Top-10 ranking + evaluation kit for enterprise prompt management, LLMOps, evaluation, and governance platforms. Built for regulated and large-scale production use.
 
-We score on real enterprise readiness (RBAC, SSO, audit, SOC2/ISO, self-host/VPC), registry strength, evaluation depth, observability & cost, non-technical collaboration, multi-model/agent support, and current momentum.
+## Why it exists
+Humanloop is gone. Helicone is in maintenance. Vellum left the enterprise lane. Teams still need a clear shortlist and a way to prove which platform actually fits.
 
-## Current leaders (short)
-1. **Langfuse** — own the data plane, strong self-host
-2. **LangSmith** — best if you already live in LangChain/LangGraph
-3. **PromptLayer** — strongest for PMs + domain experts + engineers together
-4. **Braintrust** — eval + CI gates
-5. **Arize Phoenix + AX** — when ML and LLM share one observability surface
+## What you get
+| Asset | Use |
+|-------|-----|
+| Top-10 scorecard | Ranked by enterprise readiness, registry, evals, observability |
+| EVAL-KIT (4 checklists) | Run against any shortlist in days, not months |
+| Client scorecard template | Private deliverable with gaps and recommendation |
+| Monday watcher | Signal when material releases ship |
+| Decision matrix | “If this is true → start here” |
 
-Full ranking, scores and decision matrix live in the private radar.
+## Typical stack in 2026
+Langfuse or LangSmith as primary · Braintrust or Confident AI for gates · Portkey for routing · Arize when ML + LLM share one surface.
 
-## How we work with you
-1. You share the shortlist (or we start from the Top 10).
-2. We run the EVAL-KIT (enterprise checklist, registry tests, observability, scorecard).
-3. You get a private client scorecard with gaps and a clear recommendation.
-4. Optional: ongoing weekly signal watch so the ranking stays current.
+## Next step
+1. Share the ranking.
+2. Run the EVAL-KIT on the top 2–3 platforms.
+3. Fill the client scorecard and hand over the gaps.
 
-## Why MindReply
-Quiet, production-minded, no hype. We only recommend platforms that still hold up for regulated and large-scale use. We do not sell the platforms — we help you choose and pressure-test them.
-
----
-mind-reply.com · @angellllkr-eng
+**MindReply** · mind-reply.com · github.com/angellllkr-eng/enterprise-engine-radar
