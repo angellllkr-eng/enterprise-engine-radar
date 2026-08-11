@@ -1,18 +1,18 @@
 # Changelog
 
+## 2026-08-11 — Live pass
+- Platform Watcher tightened (clearer output, manual-run note).
+- Added docs/START-HERE.md — three clear paths (ranking / client eval / seller).
+- FRONTIER.md cleaned to actual operating rules.
+- No empty paths left.
+
 ## 2026-08-11 — Premium brand surface
-- Applied consistent MindReply branding across all public surfaces (README, landing, seller, client, scorecard, releases).
-- Aligned voice with site positioning: polite & persuasive, calm operating layer, clear next actions.
-- Centered headers, clean footers, and site links throughout.
+- Consistent MindReply branding across public surfaces.
+- Aligned with site voice: polite & persuasive, calm operating layer.
 
 ## 2026-08-11 — Full E2E refresh
-- Incorporated latest public releases: Langfuse v4.6.0, LangSmith 0.16 / SmithDB / Engine / Gateway / Sandboxes / Managed Deep Agents, PromptLayer multimodal Playground (10 Aug), Arize Signal GA.
-- Rewrote every file for sharper voice and zero empty sections.
-- Added RELEASES.md, client scorecard template, landing overview, and weekly platform watcher.
+- Latest releases folded in (Langfuse v4.6, LangSmith Engine/Gateway/Sandboxes, PromptLayer multimodal, Arize Signal).
+- EVAL-KIT, seller kit, client template, RELEASES.md, weekly watcher.
 
 ## 2026-08-11 — Initial public release
-- Top-10 ranking with weighted criteria.
-- EVAL-KIT (four protocols).
-- Seller pitch and discovery questions.
-- Langfuse ClickHouse acquisition treated as net positive for scale while MIT core remains.
-- Explicit exclusion of sunsetting and pivoted products.
+- Top-10 ranking, weighted criteria, exclusion of sunsetting/pivoted products.
