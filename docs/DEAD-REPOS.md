@@ -1,24 +1,24 @@
 # Dead / ephemeral repos — Day 2 cleanup list
 
-Generated 2026-08-12. Mark these for archive in GitHub UI (Settings → General → Archive this repository).
+Generated 2026-08-12. ARCHIVE.md is already on each of these.
 
-Connected tools cannot flip the archive switch; this list is the executable checklist.
+Archive in GitHub UI: Settings → General → Archive this repository.
 
-## Safe to archive (merged, empty, or one-off scaffolds)
+## Marked with ARCHIVE.md (ready to archive)
 
 | Repo | Why |
 |------|-----|
-| a11k-surface | Description says MERGED INTO CANONICAL mind-reply-core |
-| nextjs1 | Empty boilerplate scaffold |
-| nextjs-boilerplate | Empty boilerplate scaffold |
-| eve-chat-1 | One-off chat experiment |
+| a11k-surface | Merged into mind-reply-core |
+| EPHEMERAL | Named ephemeral |
+| source1 | Empty |
+| source2 | Empty |
+| Own1 | Duplicate of own |
+| nextjs1 | Empty scaffold |
+| nextjs-boilerplate | Empty boilerplate |
+| eve-chat-1 | One-off experiment |
 | eve-chat-template | Template copy |
 | express-js-on-vercel | Scaffold |
 | unapolagetic-cosmetics | Side experiment |
-| source1 | Empty |
-| source2 | Empty |
-| Own1 | Empty / duplicate of own |
-| EPHEMERAL | Named ephemeral |
 
 ## Keep active
 
