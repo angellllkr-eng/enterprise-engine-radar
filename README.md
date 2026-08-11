@@ -6,6 +6,8 @@ The market cleaned house. Humanloop shut down. Helicone went into maintenance. V
 
 This repo is the working scorecard and the evaluation kit you can run against any shortlist. No vendor marketing. No empty claims. Just evidence, current release state, and protocols that produce a decision.
 
+→ [Landing overview](docs/landing.md) · [Private client template](CLIENT/scorecard-template.md) · [Weekly platform watcher](.github/workflows/platform-watcher.yml)
+
 ---
 
 ## Top 10 — 11 August 2026
@@ -45,12 +47,13 @@ This repo is the working scorecard and the evaluation kit you can run against an
 
 ---
 
-## Repo Contents (nothing empty)
+## Repo Contents
 
 ```
 enterprise-engine-radar/
-├── README.md                 ← ranking + matrix + how to sell
-├── SCORECARD.md              ← weighted criteria + evidence notes
+├── README.md
+├── SCORECARD.md
+├── RELEASES.md
 ├── EVAL-KIT/
 │   ├── 01-enterprise-checklist.md
 │   ├── 02-self-host-smoke.md
@@ -59,7 +62,12 @@ enterprise-engine-radar/
 ├── SELLER/
 │   ├── pitch.md
 │   └── discovery-questions.md
-├── RELEASES.md               ← current release notes for the top platforms
+├── CLIENT/
+│   └── scorecard-template.md          ← private client deliverable
+├── docs/
+│   └── landing.md                     ← short overview / landing feel
+├── .github/workflows/
+│   └── platform-watcher.yml           ← weekly signal check
 └── CHANGELOG.md
 ```
 
@@ -69,8 +77,8 @@ enterprise-engine-radar/
 
 1. Send the live ranking during discovery.  
 2. Run the EVAL-KIT against the buyer’s top two or three candidates.  
-3. Deliver a private gap analysis as the paid or high-trust next step.  
-4. Keep the ranking current so the conversation stays about evidence, not slide decks.
+3. Fill the private client scorecard and deliver the gap analysis.  
+4. Let the weekly Platform Watcher surface material release signals so the ranking stays current.
 
 ---
 
