@@ -1,9 +1,15 @@
+<div align="center">
+
 # Scoring Rationale
 
-**Version:** 11 August 2026  
-**Owner:** MindReply
+**MindReply · Enterprise Engine Radar**  
+*11 August 2026*
 
-## Weights
+</div>
+
+---
+
+### Weights
 
 | Dimension | Weight | What is measured |
 |-----------|--------|------------------|
@@ -17,7 +23,9 @@
 
 Scores move only on public evidence: new compliance statements, self-host improvements, major feature launches, or clear acquisition/pivot risk. Marketing claims alone never raise a score.
 
-## Platform notes
+---
+
+### Platform notes
 
 **Langfuse — 9.6**  
 MIT core remains self-hostable after the January 2026 ClickHouse acquisition. v4 observations-first model materially improved query performance at scale. Protected labels, datasets, LLM-as-judge, and cost dashboards ship in core. Advanced admin (full audit, SCIM) still sits behind the commercial key. Strongest public GitHub signal in the category.
@@ -48,3 +56,11 @@ Natural choice only when the broader Databricks/MLflow estate is already the sys
 
 **Future AGI — 7.8**  
 Claims a full self-host lifecycle including optimizers. Independent large-scale production evidence remains thinner than the leaders above. Higher vendor-risk score until more public references appear.
+
+---
+
+<div align="center">
+
+[mind-reply.com](https://mind-reply.com) · *One calm operating layer*
+
+</div>

@@ -1,4 +1,12 @@
+<div align="center">
+
 # Private Client Scorecard
+
+**MindReply · Enterprise Engine Radar**
+
+</div>
+
+---
 
 **Client:** [Name]  
 **Date:** [YYYY-MM-DD]  
@@ -7,7 +15,7 @@
 
 ---
 
-## Context captured
+### Context captured
 
 | Item | Answer |
 |------|--------|
@@ -22,7 +30,7 @@
 
 ---
 
-## Score against client constraints
+### Score against client constraints
 
 | Criterion | Weight | Platform A | Platform B | Platform C | Notes |
 |-----------|--------|------------|------------|------------|-------|
@@ -37,7 +45,7 @@
 
 ---
 
-## EVAL-KIT results summary
+### EVAL-KIT results summary
 
 | Protocol | Platform A | Platform B | Platform C |
 |----------|------------|------------|------------|
@@ -48,7 +56,7 @@
 
 ---
 
-## Gaps & risks
+### Gaps & risks
 
 **Platform A**  
 -  
@@ -61,7 +69,7 @@
 
 ---
 
-## Recommendation
+### Recommendation
 
 **Primary recommendation:**  
 
@@ -71,10 +79,17 @@
 
 ---
 
-## Evidence links
+### Evidence links
 
 -  
 -  
 -  
 
-*This scorecard is confidential to the named client and MindReply. Not for redistribution.*
+---
+
+<div align="center">
+
+*Confidential to the named client and MindReply. Not for redistribution.*  
+[mind-reply.com](https://mind-reply.com) · *Polite & persuasive*
+
+</div>
