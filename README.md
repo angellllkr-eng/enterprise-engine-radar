@@ -1,100 +1,70 @@
 # Enterprise Engine Radar
 
-**MindReply · Living intelligence for production LLMOps**  
-*August 2026 · Seller-ready · E2E evaluation kit*
+**MindReply · Production LLMOps intelligence**  
+*Live ranking · Evaluation kit · Seller asset · 11 Aug 2026*
 
-> The market consolidated hard in 2025–2026.  
-> Humanloop is gone. Helicone is in maintenance. Vellum pivoted.  
-> Only a handful of platforms remain serious for regulated, large-scale production.
-
-This repository is the **canonical, continuously updated scorecard** and the practical evaluation kit you can run against any shortlist.
+Half the “best tools” lists still name products that shut down or pivoted.  
+This repo tracks only what is still shipping and fit for regulated production.
 
 ---
 
-## Top 10 Enterprise Engines — August 2026
+## Top 10 — August 2026
 
-| Rank | Platform | Best For | Enterprise Score | Self-host / VPC | Standout |
-|------|----------|----------|------------------|-----------------|----------|
-| **1** | **Langfuse** | Regulated + platform teams that want to own the stack | **9.6** | Yes (MIT core) | 32.8k★ · ClickHouse-backed · protected labels · full self-host |
-| **2** | **LangSmith** | LangChain / LangGraph native orgs | **9.2** | Enterprise only | Deepest multi-agent tracing + Environments |
-| **3** | **PromptLayer** | Cross-functional (PM + domain experts + eng) | **8.7** | Enterprise only | True registry-first + traffic-split labels |
-| **4** | **Braintrust** | Eval-first teams with CI gates | **8.6** | Enterprise only | Production traces → living datasets |
-| **5** | **Arize (Phoenix + AX)** | ML + LLM observability coexistence | **9.0** | Yes (Phoenix) | OTel-native · enterprise monitors |
-| **6** | **Portkey** | Multi-provider gateway + cost control | **8.3** | Partial / Ent | Routing · fallbacks · attribution |
-| **7** | **Agenta** | Open-source prompt + agent workbench | **8.1** | Yes (MIT) | Non-engineer collaboration + evaluators |
-| **8** | **Confident AI** | Org-wide quality standards & gates | **8.4** | Enterprise | Red-team + continuous enforcement |
-| **9** | **MLflow Prompt Registry** | Databricks / MLflow estates | **8.2** | Yes | Native lineage inside broader ML lifecycle |
-| **10** | **Future AGI** | Full self-host lifecycle (higher vendor risk) | **7.8** | Yes | Integrated optimizers + CI gates |
+| # | Platform | Best for | Score | Self-host | Latest signal |
+|---|----------|----------|-------|-----------|---------------|
+| 1 | **Langfuse** | Own the stack, regulated data | **9.6** | Yes (MIT) | **v4.6** (6 Aug) · 165× faster tables · Pulse outliers · MCP tools · Gateway on roadmap |
+| 2 | **LangSmith** | LangChain / LangGraph teams | **9.2** | Ent only | **Fleet** + **Engine** + **SmithDB** (15× faster) + **LLM Gateway** (spend caps, PII redact) |
+| 3 | **PromptLayer** | PMs + domain experts edit prompts | **8.7** | Ent only | AI trace summaries · OpenRouter · dynamic release labels · MCP (61 tools) |
+| 4 | **Braintrust** | Eval → production loop | **8.6** | Ent / BYOC | **Topics GA** · Behavior Specs · pairwise scoring · experiment summary tables |
+| 5 | **Arize Phoenix + AX** | ML + LLM in one place | **9.0** | Phoenix yes | **v19.21** (10 Aug) · PXI agent skills · AG2 / Cohere / Ollama instrumentors |
+| 6 | **Portkey** | Multi-model gateway + cost | **8.3** | Partial | Gateway + prompt versioning + spend controls |
+| 7 | **Agenta** | Open-source prompt + agent workspace | **8.1** | Yes (MIT) | Environments · online eval · non-engineer focus |
+| 8 | **Confident AI** | Org-wide quality gates | **8.4** | Ent | Red-team + continuous pre-ship / live enforcement |
+| 9 | **MLflow Prompt Registry** | Databricks estates | **8.2** | Yes | Native lineage inside existing ML platform |
+| 10 | **Future AGI** | Full self-host lifecycle (higher risk) | **7.8** | Yes | Optimizers + CI gates — thinner independent proof |
 
-**Primary ranking criteria (in order):**  
-1. True enterprise readiness (RBAC, SSO/SAML, audit, SOC2/ISO, residency, VPC)  
-2. Prompt/skill registry + versioning + release management  
-3. Evaluation depth (auto + regression + CI gates + HITL)  
-4. Production observability + cost attribution  
-5. Non-technical collaboration  
-6. Multi-model / multi-agent + context engineering  
-7. Market momentum + independence + production evidence
+**Criteria order:** enterprise readiness → registry/release → eval depth → observability + cost → non-tech collaboration → multi-model/agent → momentum & independence.
 
 ---
 
-## Quick Decision Matrix
+## Decision shortcuts
 
-| If you need… | Choose |
-|--------------|--------|
-| Maximum self-host + data residency | **Langfuse** |
-| Deepest LangChain/LangGraph native | **LangSmith** |
-| Non-technical domain experts own prompts | **PromptLayer** |
-| Strongest eval → production loop | **Braintrust** |
-| Unified ML + LLM observability | **Arize AX** |
-| Multi-provider gateway + cost | **Portkey** |
-| Open-source prompt-centric workbench | **Agenta** |
-| Org-wide quality gates | **Confident AI** |
-| Existing Databricks estate | **MLflow** |
+| Need | Pick |
+|------|------|
+| Self-host + residency | Langfuse |
+| Already on LangChain/LangGraph | LangSmith |
+| Non-engineers own prompts | PromptLayer |
+| Strict eval + CI gates | Braintrust |
+| Classical ML + LLM together | Arize AX |
+| Gateway + multi-provider cost | Portkey |
+| Open-source workbench | Agenta |
 
----
-
-## Stack Pattern Most Large Enterprises Actually Run (2026)
-
-**Primary engine** → Langfuse (self-host preferred) *or* LangSmith (if LangChain-heavy) *or* PromptLayer (cross-functional).  
-**Complementary** → Braintrust / Confident AI (evals + gates) + Portkey (gateway) + Arize AX (when classical ML coexists).
+**Typical large-enterprise pattern 2026**  
+Primary: Langfuse (self-host) *or* LangSmith *or* PromptLayer.  
+Add: Braintrust/Confident (gates) + Portkey (routing) + Arize when ML coexists.
 
 ---
 
-## What’s Inside This Repo
+## What’s in the repo
 
 ```
-enterprise-engine-radar/
-├── README.md                          ← you are here
-├── SCORECARD.md                       ← full criteria + scoring rationale
-├── EVAL-KIT/
-│   ├── 01-enterprise-checklist.md     ← RBAC / SSO / audit / residency tests
-│   ├── 02-self-host-smoke.md          ← time-to-first-trace protocol
-│   ├── 03-prompt-registry-tests.md    ← versioning + labels + promotion
-│   └── 04-eval-and-observability.md   ← regression + cost attribution
-├── SELLER/
-│   ├── pitch.md                       ← ready-to-send positioning
-│   └── discovery-questions.md         ← buyer qualification questions
-└── CHANGELOG.md
+README.md                 ← ranking + latest signals
+SCORECARD.md              ← weighted criteria + evidence
+EVAL-KIT/                 ← 4 practical test protocols
+SELLER/                   ← pitch + discovery questions
+CHANGELOG.md
 ```
 
 ---
 
-## How to Use This as a Seller
+## How to use as a seller
 
-1. Share the live scorecard (this README) during discovery.  
-2. Run the EVAL-KIT against the buyer’s shortlist in a throwaway environment.  
-3. Deliver a private scorecard + gap analysis as the paid or high-trust next step.  
-4. Position MindReply as the independent intelligence layer that keeps the ranking current.
-
----
-
-## License & Attribution
-
-MindReply intelligence.  
-Free to use for evaluation and internal decision-making.  
-Commercial redistribution or white-label requires attribution and/or license.
+1. Send this README in discovery.  
+2. Run EVAL-KIT on the buyer’s shortlist.  
+3. Deliver a private gap analysis as the next paid or high-trust step.  
+4. Keep the ranking current — that is the product.
 
 ---
 
-**Maintained by** [Angel K / MindReply](https://mind-reply.com) · `@angellllkr-eng`  
-Last major refresh: **11 August 2026**
+**MindReply / Angel K** · [mind-reply.com](https://mind-reply.com) · `@angellllkr-eng`  
+Last refresh: **11 August 2026**

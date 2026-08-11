@@ -1,26 +1,23 @@
-# 01 — Enterprise Readiness Checklist
+# 01 — Enterprise checklist
 
-Run this against every shortlisted platform. Mark Pass / Fail / Partial.
+Mark Pass / Fail / Partial. Record the evidence (doc link, screenshot, or dated vendor statement).
 
-## Identity & Access
-- [ ] SSO / SAML available
-- [ ] SCIM provisioning
-- [ ] Granular RBAC (workspace / project / prompt level)
-- [ ] Role separation between engineers and domain experts
-- [ ] Audit log of who changed what prompt version and when
+## Access
+- [ ] SSO / SAML
+- [ ] SCIM
+- [ ] RBAC at workspace / project / prompt level
+- [ ] Clear separation for domain experts vs engineers
+- [ ] Audit log of prompt version changes (who / what / when)
 
-## Compliance & Residency
+## Compliance & data
 - [ ] Current SOC 2 Type II (or equivalent)
-- [ ] ISO 27001 if required by buyer
-- [ ] HIPAA BAA available (if healthcare)
+- [ ] ISO 27001 if required
+- [ ] HIPAA BAA if healthcare
 - [ ] Data residency options (US / EU / other)
-- [ ] Ability to keep prompt + trace data inside buyer VPC / air-gapped
+- [ ] Prompt + trace data can stay in buyer VPC or air-gapped
 
-## Deployment Model
-- [ ] True self-host path documented and tested
-- [ ] Official Helm chart or Terraform modules
-- [ ] Clear separation between open-source core and commercial EE features
-- [ ] No forced phone-home for core functionality
-
-## Notes for Buyer Conversation
-Record exact evidence (screenshot, docs link, or vendor statement date).
+## Deployment
+- [ ] Documented self-host path that actually works
+- [ ] Official Helm or Terraform
+- [ ] Clear open-core vs paid feature boundary
+- [ ] Core features do not require phone-home
