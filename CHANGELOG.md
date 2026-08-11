@@ -1,15 +1,13 @@
 # Changelog
 
+## 2026-08-12 — Single source of truth
+- Confirmed `main` holds the current content.
+- Documented that the two frontier branches are obsolete and can be deleted.
+- Added note on how this repo relates to agent-control-plane (manual only).
+
 ## 2026-08-12 — Plain language
-- Stripped marketing phrasing across README, landing, seller, scorecard, client template.
-- START-HERE remains the entry point.
-- Watcher unchanged and runnable.
+- Stripped marketing phrasing.
+- START-HERE is the entry point.
 
-## 2026-08-11 — Live pass
-- Platform Watcher tightened.
-- START-HERE added.
-- FRONTIER cleaned.
-
-## 2026-08-11 — Brand + full content
-- Ranking, EVAL-KIT, seller kit, client template, RELEASES.md, weekly watcher.
-- Latest public releases folded in.
+## 2026-08-11 — Live pass + content
+- Ranking, EVAL-KIT, seller kit, client template, RELEASES, watcher.
