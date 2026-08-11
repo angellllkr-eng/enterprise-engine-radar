@@ -4,10 +4,295 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Enterprise Engine Radar · MindReply</title>
-<meta http-equiv="refresh" content="0; url=site/index.html">
-<script>location.replace('site/index.html');</script>
+<style>
+  :root {
+    --bg: #0b0d10;
+    --surface: #12151a;
+    --border: #1e232b;
+    --text: #e8eaed;
+    --muted: #8b939e;
+    --accent: #6ea8fe;
+    --good: #3dd68c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { margin-bottom: 40px; }
+  header h1 { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.02em; }
+  header p { color: var(--muted); font-size: 0.95rem; margin-top: 6px; }
+  header a { color: var(--accent); text-decoration: none; }
+  .lead { color: var(--muted); margin-bottom: 32px; font-size: 0.95rem; }
+  h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 36px 0 14px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .card-head:hover { background: #161a20; }
+  .rank {
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    background: #1a1f27;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 600; color: var(--muted);
+    flex-shrink: 0;
+  }
+  .name { font-weight: 550; flex: 1; }
+  .score { color: var(--good); font-weight: 600; font-size: 0.9rem; }
+  .card-body {
+    display: none;
+    padding: 0 16px 16px 56px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .card.open .card-body { display: block; }
+  .card-body p { margin-bottom: 6px; }
+  .tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #1a1f27;
+    color: var(--muted);
+    margin-right: 6px;
+    margin-top: 4px;
+  }
+  .matrix { display: grid; gap: 8px; }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+  .row span:last-child { color: var(--accent); font-weight: 500; white-space: nowrap; }
+  .actions { display: grid; gap: 10px; margin-top: 8px; }
+  .action {
+    display: block;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .action:hover { border-color: var(--accent); }
+  .action strong { display: block; margin-bottom: 2px; }
+  .action span { color: var(--muted); font-size: 0.85rem; }
+  .kit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  @media (max-width: 520px) { .kit { grid-template-columns: 1fr; } }
+  .kit a {
+    padding: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .kit a:hover { border-color: var(--accent); }
+  .kit a span { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 4px; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
 </head>
 <body>
-<p><a href="site/index.html">Open Enterprise Engine Radar</a></p>
+<div class="wrap">
+  <header>
+    <h1>Enterprise Engine Radar</h1>
+    <p><a href="https://mind-reply.com">MindReply</a> · August 2026</p>
+  </header>
+
+  <p class="lead">The platforms that still hold up for regulated, large-scale production. Scorecard + evaluation kit. Run it against any shortlist.</p>
+
+  <h2>Top 10</h2>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">1</div><div class="name">Langfuse</div><div class="score">9.6</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Own the data plane</p>
+      <p>Self-host: Yes (MIT core)</p>
+      <p>v4.6.0 · observations-first · ClickHouse · 32.8k stars</p>
+      <span class="tag">Self-host</span><span class="tag">Open core</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">2</div><div class="name">LangSmith</div><div class="score">9.2</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> LangChain / LangGraph stacks</p>
+      <p>Self-host: Enterprise only</p>
+      <p>SmithDB · Engine · Gateway · Sandboxes · Managed Deep Agents</p>
+      <span class="tag">LangChain</span><span class="tag">Enterprise</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">3</div><div class="name">PromptLayer</div><div class="score">8.7</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> PMs + domain experts + engineers</p>
+      <p>Self-host: Enterprise</p>
+      <p>Registry · release labels · multimodal Playground</p>
+      <span class="tag">Collaboration</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">4</div><div class="name">Braintrust</div><div class="score">8.6</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Eval + CI gates</p>
+      <p>Self-host: Enterprise</p>
+      <p>Trace → dataset → scorer · Topics · gateway beta</p>
+      <span class="tag">Evals</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">5</div><div class="name">Arize Phoenix + AX</div><div class="score">9.0</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> ML + LLM together</p>
+      <p>Self-host: Phoenix OSS / AX Enterprise</p>
+      <p>Signal GA · managed agents · OpenInference</p>
+      <span class="tag">Observability</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">6</div><div class="name">Portkey</div><div class="score">8.3</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Multi-provider routing + cost</p>
+      <p>Self-host: Partial</p>
+      <p>Gateway · semantic cache · spend limits</p>
+      <span class="tag">Gateway</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">7</div><div class="name">Agenta</div><div class="score">8.1</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Open prompt workspace</p>
+      <p>Self-host: Yes (MIT)</p>
+      <p>Environments · online eval</p>
+      <span class="tag">Open source</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">8</div><div class="name">Confident AI</div><div class="score">8.4</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Org-wide quality bar</p>
+      <p>Self-host: Enterprise</p>
+      <p>Continuous gates · red-team</p>
+      <span class="tag">Quality</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">9</div><div class="name">MLflow Prompt Registry</div><div class="score">8.2</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Databricks estates</p>
+      <p>Self-host: Yes</p>
+      <p>Native lineage in ML lifecycle</p>
+      <span class="tag">Databricks</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">10</div><div class="name">Future AGI</div><div class="score">7.8</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Full self-host lifecycle</p>
+      <p>Self-host: Yes</p>
+      <p>Optimizers · thinner public proof</p>
+      <span class="tag">Self-host</span>
+    </div>
+  </div>
+
+  <h2>Decision matrix</h2>
+  <div class="matrix">
+    <div class="row"><span>Data stays inside your network</span><span>Langfuse</span></div>
+    <div class="row"><span>Already on LangChain / LangGraph</span><span>LangSmith</span></div>
+    <div class="row"><span>Domain experts edit prompts</span><span>PromptLayer</span></div>
+    <div class="row"><span>Regression is the main risk</span><span>Braintrust</span></div>
+    <div class="row"><span>Classical ML monitoring already there</span><span>Arize AX</span></div>
+    <div class="row"><span>Provider sprawl and token spend</span><span>Portkey</span></div>
+    <div class="row"><span>Want open-source workbench</span><span>Agenta</span></div>
+    <div class="row"><span>Central team sets the quality bar</span><span>Confident AI</span></div>
+    <div class="row"><span>Live inside Databricks</span><span>MLflow</span></div>
+  </div>
+
+  <h2>Next steps</h2>
+  <div class="actions">
+    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/tree/main/EVAL-KIT" target="_blank" rel="noopener">
+      <strong>Run the EVAL-KIT</strong>
+      <span>Four checklists against any shortlist</span>
+    </a>
+    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/CLIENT/scorecard-template.md" target="_blank" rel="noopener">
+      <strong>Fill a client scorecard</strong>
+      <span>Private deliverable for a real evaluation</span>
+    </a>
+    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/SELLER/pitch.md" target="_blank" rel="noopener">
+      <strong>Use the seller pitch</strong>
+      <span>One-liner + discovery questions</span>
+    </a>
+    <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar" target="_blank" rel="noopener">
+      <strong>Open the full repo</strong>
+      <span>All files, watcher, releases</span>
+    </a>
+  </div>
+
+  <h2>EVAL-KIT</h2>
+  <div class="kit">
+    <a href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/EVAL-KIT/01-enterprise-checklist.md" target="_blank" rel="noopener">
+      01 · Enterprise checklist
+      <span>SSO, RBAC, audit, residency</span>
+    </a>
+    <a href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/EVAL-KIT/02-self-host-smoke.md" target="_blank" rel="noopener">
+      02 · Self-host smoke
+      <span>Time to first useful signal</span>
+    </a>
+    <a href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/EVAL-KIT/03-prompt-registry-tests.md" target="_blank" rel="noopener">
+      03 · Prompt registry
+      <span>Versions, labels, rollback</span>
+    </a>
+    <a href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/EVAL-KIT/04-eval-and-observability.md" target="_blank" rel="noopener">
+      04 · Eval + observability
+      <span>CI gates, cost, traces</span>
+    </a>
+  </div>
+
+  <footer>
+    MindReply · <a href="https://mind-reply.com">mind-reply.com</a> · <a href="https://github.com/angellllkr-eng/enterprise-engine-radar">GitHub</a>
+  </footer>
+</div>
 </body>
 </html>
