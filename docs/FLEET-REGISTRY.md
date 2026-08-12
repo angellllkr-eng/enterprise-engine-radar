@@ -1,14 +1,14 @@
 # MindReply Fleet Registry — SRE War-Room view
 **Generated:** 2026-08-12 02:40 EEST  
 **Source:** Vercel team `angelk` + GitHub `angellllkr-eng`  
-**Principle:** paste-first evidence · no invented health
+**Principle:** paste-first evidence · no invented health 
 
 ## Clusters (logical)
 
 | Cluster | Role | Blast radius if down |
 |---------|------|----------------------|
 | **CORE** | Canonical product + control | Whole estate identity |
-| **RADAR** | Intelligence / seller surface | Opportunity + ranking only |
+| **RADAR** | SIntelligence / seller surface | Opportunity + ranking only |
 | **GATEWAY** | LLM routing | All agents using /api/llm |
 | **VOICE** | a11-k multiverse realtime | Voice demos only |
 | **RESELLER** | ResellerPro copies | Commerce experiments |
