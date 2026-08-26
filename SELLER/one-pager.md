@@ -4,6 +4,13 @@
 ## What it is
 A living Top-10 ranking + evaluation kit for enterprise prompt management, LLMOps, evaluation, and governance platforms. Built for regulated and large-scale production use.
 
+## Three bands (replacement levels)
+- **Micro-product systems** — replace one or two skilled people. Turnkey outputs (funnels, sequences, course factories). Immediate revenue or hours saved.
+- **Operational systems** — replace departments. Workflow infrastructure (support desks with SLA, brand-voice engines). Recurring labor cut, consistent output.
+- **Enterprise engines** — replace business units. Reusable business IP (SaaS generators, knowledge engines). Exclusivity, scale, licensing.
+
+Buyers pay for direct revenue impact, operational replacement, consistency, scarcity, and licensing. This radar scores the platforms that support those levels.
+
 ## Why it exists
 Humanloop is gone. Helicone is in maintenance. Vellum left the enterprise lane. Teams still need a clear shortlist and a way to prove which platform actually fits.
 
