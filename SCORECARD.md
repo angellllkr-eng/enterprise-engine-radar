@@ -1,6 +1,17 @@
 # Scoring
 
-**11 August 2026**
+**28 August 2026** — replacement-level gate added. Weights unchanged.
+
+### Gate (before any number)
+
+Name the replacement level first: task / department / business.
+See `EVAL-KIT/05-replacement-level.md`.
+
+- No band named → no score.
+- Band named, public evidence missing → cap one band below.
+- Band named + public evidence → apply weights below.
+
+Public-safe short form: micro replaces tasks, operational replaces departments, enterprise replaces businesses.
 
 ### Weights
 
