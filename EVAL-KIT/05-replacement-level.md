@@ -1,11 +1,31 @@
-# Replacement-level qualifier
+# EVAL-KIT / 05 — Replacement Level Gate
+**Hard rule for every scored system**
 
-Score a platform only after the buyer names the replacement level.
+## Public-safe language only
+micro replaces tasks · operational replaces departments · enterprise replaces businesses
 
-Public-safe bands:
-- Micro-product systems replace tasks.
-- Operational systems replace departments.
-- Enterprise engines replace businesses.
+## Gate Logic (executable)
+
+```text
+IF primary_band is missing or null:
+    RETURN score = null
+    REJECT entry from public SCORECARD
+
+IF primary_band == "Enterprise":
+    REQUIRE public reusable-IP evidence
+    (product architecture + pricing model + onboarding flows + go-to-market plan as reusable assets)
+    ELSE:
+        FORCE primary_band = "Operational"
+        APPLY cap rule: one band below any marketing claim
+
+IF primary_band == "Operational":
+    ALLOW enterprise-readiness sub-score
+    FORBID full "replace business unit" claim without IP proof
+
+IF primary_band == "Micro":
+    ALLOW task / 1-2 person replacement only
+    FORBID department or business-unit claims
+```
 
 ## Qualifier (must answer first)
 
@@ -15,6 +35,14 @@ Public-safe bands:
 
 If the buyer cannot name the level, do not score. Discovery is incomplete.
 
+## Band Definitions (compressed)
+
+| Band              | Replaces              | Buyer pays for                          |
+|-------------------|-----------------------|-----------------------------------------|
+| Micro-product     | Tasks / 1-2 people    | Immediate revenue or hours saved        |
+| Operational       | Departments           | Recurring labor cut + consistency       |
+| Enterprise engine | Business units        | Scarcity, scalability, licensing IP     |
+
 ## Band fit checks (public evidence only)
 
 | Level | Must show | Fail if |
@@ -23,12 +51,9 @@ If the buyer cannot name the level, do not score. Discovery is incomplete.
 | Department | Repeatable workflow with roles, escalation or SLA, consistent voice/output | Chatbot demo with no ops contract |
 | Business | Reusable IP: architecture + pricing + onboarding + GTM, or document-to-decision system | One-off build sold as a platform |
 
-## How this sits on the existing scorecard
+## Enforcement
+- SCORECARD.md must contain a Primary Band column.
+- No score is published without a named primary band.
+- Cap rules are applied automatically.
 
-Keep the 11 August 2026 weights. Add a hard gate in front:
-
-- No band named → no score.
-- Band named, evidence missing → cap at the band below.
-- Band named + public evidence → apply weights as written.
-
-Scores still move only on public evidence.
+Stamped: 2026-09-04

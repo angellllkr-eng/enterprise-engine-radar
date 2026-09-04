@@ -1,6 +1,6 @@
 # Scoring
 
-**28 August 2026** — replacement-level gate added. Weights unchanged.
+**04 September 2026** — Primary Band column live. Replacement-level gate active. Weights unchanged.
 
 ### Gate (before any number)
 
@@ -12,6 +12,23 @@ See `EVAL-KIT/05-replacement-level.md`.
 - Band named + public evidence → apply weights below.
 
 Public-safe short form: micro replaces tasks, operational replaces departments, enterprise replaces businesses.
+
+### Primary Band Map (Top-10)
+
+| Rank | Vendor / System        | Score | Primary Band          | Cap Rule                                      |
+|------|------------------------|-------|-----------------------|-----------------------------------------------|
+| 1    | Langfuse               | 9.6   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 2    | LangSmith              | 9.2   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 3    | Arize Phoenix + AX     | 9.0   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 4    | PromptLayer            | 8.7   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 5    | Braintrust             | 8.6   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 6    | Confident AI           | 8.4   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 7    | Portkey                | 8.3   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 8    | MLflow Prompt Registry | 8.2   | Operational           | Cap enterprise unless reusable business-IP proof |
+| 9    | Agenta                 | 8.1   | Micro → Operational   | No enterprise score                           |
+| 10   | Future AGI             | 7.8   | Operational           | Cap one band below claim                      |
+
+Top-10 default to Operational with enterprise-readiness measurement only. Enterprise band requires public reusable-IP evidence.
 
 ### Weights
 
