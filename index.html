@@ -56,6 +56,15 @@
   }
   .name { font-weight: 550; flex: 1; }
   .score { color: var(--good); font-weight: 600; font-size: 0.9rem; }
+  .band {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #1a2433;
+    color: var(--accent);
+    font-weight: 500;
+    margin-right: 8px;
+  }
   .card-body {
     display: none;
     padding: 0 16px 16px 56px;
@@ -154,10 +163,10 @@
 <div class="wrap">
   <header>
     <h1>Enterprise Engine Radar</h1>
-    <p><a href="https://mind-reply.com">MindReply</a> · August 2026</p>
+    <p><a href="https://mind-reply.com">MindReply</a> · September 2026</p>
   </header>
 
-  <p class="lead">The platforms that still hold up for regulated, large-scale production. Scorecard + evaluation kit. Run it against any shortlist.</p>
+  <p class="lead">The platforms that still hold up for regulated, large-scale production. Scorecard + evaluation kit. Run it against any shortlist. Primary band is mandatory — no band, no score.</p>
 
   <h2>Three bands</h2>
   <div class="matrix">
@@ -178,7 +187,7 @@
   <h2>Top 10</h2>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">1</div><div class="name">Langfuse</div><div class="score">9.6</div></div>
+    <div class="card-head"><div class="rank">1</div><div class="name">Langfuse</div><span class="band">Operational</span><div class="score">9.6</div></div>
     <div class="card-body">
       <p><strong>Best for:</strong> Own the data plane</p>
       <p>Self-host: Yes (MIT core)</p>
@@ -188,7 +197,7 @@
   </div>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">2</div><div class="name">LangSmith</div><div class="score">9.2</div></div>
+    <div class="card-head"><div class="rank">2</div><div class="name">LangSmith</div><span class="band">Operational</span><div class="score">9.2</div></div>
     <div class="card-body">
       <p><strong>Best for:</strong> LangChain / LangGraph stacks</p>
       <p>Self-host: Enterprise only</p>
@@ -198,27 +207,7 @@
   </div>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">3</div><div class="name">PromptLayer</div><div class="score">8.7</div></div>
-    <div class="card-body">
-      <p><strong>Best for:</strong> PMs + domain experts + engineers</p>
-      <p>Self-host: Enterprise</p>
-      <p>Registry · release labels · multimodal Playground</p>
-      <span class="tag">Collaboration</span>
-    </div>
-  </div>
-
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">4</div><div class="name">Braintrust</div><div class="score">8.6</div></div>
-    <div class="card-body">
-      <p><strong>Best for:</strong> Eval + CI gates</p>
-      <p>Self-host: Enterprise</p>
-      <p>Trace → dataset → scorer · Topics · gateway beta</p>
-      <span class="tag">Evals</span>
-    </div>
-  </div>
-
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">5</div><div class="name">Arize Phoenix + AX</div><div class="score">9.0</div></div>
+    <div class="card-head"><div class="rank">3</div><div class="name">Arize Phoenix + AX</div><span class="band">Operational</span><div class="score">9.0</div></div>
     <div class="card-body">
       <p><strong>Best for:</strong> ML + LLM together</p>
       <p>Self-host: Phoenix OSS / AX Enterprise</p>
@@ -228,27 +217,27 @@
   </div>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">6</div><div class="name">Portkey</div><div class="score">8.3</div></div>
+    <div class="card-head"><div class="rank">4</div><div class="name">PromptLayer</div><span class="band">Operational</span><div class="score">8.7</div></div>
     <div class="card-body">
-      <p><strong>Best for:</strong> Multi-provider routing + cost</p>
-      <p>Self-host: Partial</p>
-      <p>Gateway · semantic cache · spend limits</p>
-      <span class="tag">Gateway</span>
+      <p><strong>Best for:</strong> PMs + domain experts + engineers</p>
+      <p>Self-host: Enterprise</p>
+      <p>Registry · release labels · multimodal Playground</p>
+      <span class="tag">Collaboration</span>
     </div>
   </div>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">7</div><div class="name">Agenta</div><div class="score">8.1</div></div>
+    <div class="card-head"><div class="rank">5</div><div class="name">Braintrust</div><span class="band">Operational</span><div class="score">8.6</div></div>
     <div class="card-body">
-      <p><strong>Best for:</strong> Open prompt workspace</p>
-      <p>Self-host: Yes (MIT)</p>
-      <p>Environments · online eval</p>
-      <span class="tag">Open source</span>
+      <p><strong>Best for:</strong> Eval + CI gates</p>
+      <p>Self-host: Enterprise</p>
+      <p>Trace → dataset → scorer · Topics · gateway beta</p>
+      <span class="tag">Evals</span>
     </div>
   </div>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">8</div><div class="name">Confident AI</div><div class="score">8.4</div></div>
+    <div class="card-head"><div class="rank">6</div><div class="name">Confident AI</div><span class="band">Operational</span><div class="score">8.4</div></div>
     <div class="card-body">
       <p><strong>Best for:</strong> Org-wide quality bar</p>
       <p>Self-host: Enterprise</p>
@@ -258,7 +247,17 @@
   </div>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">9</div><div class="name">MLflow Prompt Registry</div><div class="score">8.2</div></div>
+    <div class="card-head"><div class="rank">7</div><div class="name">Portkey</div><span class="band">Operational</span><div class="score">8.3</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Multi-provider routing + cost</p>
+      <p>Self-host: Partial</p>
+      <p>Gateway · semantic cache · spend limits</p>
+      <span class="tag">Gateway</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">8</div><div class="name">MLflow Prompt Registry</div><span class="band">Operational</span><div class="score">8.2</div></div>
     <div class="card-body">
       <p><strong>Best for:</strong> Databricks estates</p>
       <p>Self-host: Yes</p>
@@ -268,7 +267,17 @@
   </div>
 
   <div class="card" onclick="this.classList.toggle('open')">
-    <div class="card-head"><div class="rank">10</div><div class="name">Future AGI</div><div class="score">7.8</div></div>
+    <div class="card-head"><div class="rank">9</div><div class="name">Agenta</div><span class="band">Micro → Operational</span><div class="score">8.1</div></div>
+    <div class="card-body">
+      <p><strong>Best for:</strong> Open prompt workspace</p>
+      <p>Self-host: Yes (MIT)</p>
+      <p>Environments · online eval</p>
+      <span class="tag">Open source</span>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="card-head"><div class="rank">10</div><div class="name">Future AGI</div><span class="band">Operational</span><div class="score">7.8</div></div>
     <div class="card-body">
       <p><strong>Best for:</strong> Full self-host lifecycle</p>
       <p>Self-host: Yes</p>
@@ -299,7 +308,7 @@
   <div class="actions">
     <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/tree/main/EVAL-KIT" target="_blank" rel="noopener">
       <strong>Run the EVAL-KIT</strong>
-      <span>Four checklists against any shortlist</span>
+      <span>Five checklists against any shortlist</span>
     </a>
     <a class="action" href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/SELLER/one-pager.md" target="_blank" rel="noopener">
       <strong>Send the one-pager</strong>
@@ -332,6 +341,10 @@
     <a href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/EVAL-KIT/04-eval-and-observability.md" target="_blank" rel="noopener">
       04 · Eval + observability
       <span>CI gates, cost, traces</span>
+    </a>
+    <a href="https://github.com/angellllkr-eng/enterprise-engine-radar/blob/main/EVAL-KIT/05-replacement-level.md" target="_blank" rel="noopener">
+      05 · Replacement level
+      <span>Band gate — no band, no score</span>
     </a>
   </div>
 
